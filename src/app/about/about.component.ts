@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-about',
   standalone: true,
   imports: [RouterOutlet, RouterLink],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './about.component.html',
+  styleUrl: './about.component.css'
 })
-export class AppComponent {
-  title = 'my-app';
+export class AboutComponent {
+
 }
