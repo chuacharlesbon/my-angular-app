@@ -1,9 +1,22 @@
-<main class="main">
-  <nav class="w-full p-4 bg-grey-400">
-    <a class="button" routerLink="/">Home</a> |
-    <a class="button" routerLink="/about">About</a>
+<main class="min-h-screen">
+  <nav
+    class="fixed z-50 w-full h-20 px-4 tabletWide:px-8 laptop:px-16 flex flex-row items-center justify-between bg-white border-b border-grey-400">
+    <div class="flex flex-row items-center">
+      <img class="w-10 h-10 object-cover rounded-full mr-4" src="/assets/tree-logo.jpg" />
+      <div>
+        <p class="text-xl font-bold">SCENERY</p>
+        <p class="text-xs text-secondary-200">Philippines</p>
+      </div>
+    </div>
+    <div>
+      <a class="button mx-4 text-lg font-semibold" routerLink="/">Home</a>
+      <span class="mx-2 hidden">|</span>
+      <a class="button mx-4 text-lg font-semibold" routerLink="/about">About</a>
+      <span class="mx-2 hidden">|</span>
+      <a class="button mx-4 text-lg font-semibold" routerLink="/contact-us">Contact Us</a>
+    </div>
   </nav>
-  <div class="content">
+  <div class="min-h-screen pt-20">
     <router-outlet />
     <!-- <div class="left-side">
       <svg
@@ -157,6 +170,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
-
