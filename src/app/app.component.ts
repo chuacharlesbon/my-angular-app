@@ -34,7 +34,7 @@ export class AppComponent {
       )
       .subscribe((title: string) => {
         if (title) {
-          this.titleService.setTitle(`${title} | My App`);
+          this.titleService.setTitle(`${title} | SCENERY PH`);
         }
       });
   }
